@@ -59,6 +59,16 @@ for estenumero in range(20,0,-1):
 #Crea un diccionario con 3 productos y sus precios. Usa un for con .items() para imprimir "producto: $precio".
 
 
+productosyprecios = {
+     'shampoo' : '5.99',
+     'llanta' : '2500.59',
+     'silla' : '239.99'
+}
+
+for producto, precioindividual in productosyprecios.items():
+     print(f"Producto: {producto} / Precio: {precioindividual}")
+
+
 #Dado edades = {"Luis": 20, "Marta": 35, "Ana": 28}, usa un loop para encontrar quién es la persona de mayor edad.
 
 
