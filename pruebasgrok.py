@@ -42,3 +42,24 @@ resultado = 0
 for op in range(1,101):
     resultado = resultado + op
 print(resultado)
+
+
+#Usa range con step para imprimir los múltiplos de 3 entre 0 y 30.
+
+for cadauno in range(0,31,1):
+    if cadauno % 3 == 0 and cadauno != 0:
+        print(cadauno)
+
+#Usa range en reversa para imprimir del 20 al 1.
+
+for estenumero in range(20,0,-1):
+        print(estenumero)
+
+
+#Crea un diccionario con 3 productos y sus precios. Usa un for con .items() para imprimir "producto: $precio".
+
+
+#Dado edades = {"Luis": 20, "Marta": 35, "Ana": 28}, usa un loop para encontrar quién es la persona de mayor edad.
+
+
+#Crea un diccionario vacío y ve agregando pares clave-valor dentro de un for que recorra una lista de nombres, asignando a cada uno la longitud de su nombre como valor.
