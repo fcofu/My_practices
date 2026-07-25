@@ -71,5 +71,34 @@ for producto, precioindividual in productosyprecios.items():
 
 #Dado edades = {"Luis": 20, "Marta": 35, "Ana": 28}, usa un loop para encontrar quién es la persona de mayor edad.
 
+agenda = {
+    "Luis": 20,
+    "Marta": 35,
+    "Ana": 28
+}
 
+elmayor = None
+edadfinal = -1
+
+for persona, edad in agenda.items():
+    if edad > edadfinal:
+        edadfinal = edad
+        elmayor = persona
+
+print(f'La persona mayor es {elmayor} con {edadfinal} años')
+    
+     
 #Crea un diccionario vacío y ve agregando pares clave-valor dentro de un for que recorra una lista de nombres, asignando a cada uno la longitud de su nombre como valor.
+
+
+dicc = {}
+listanombres = ['Pedro', 'Manuel', 'Ricardo', 'Maria', 'Laura', 'Ignacio']
+
+for nombrelol in listanombres:
+    dicc[nombrelol] = len(nombrelol)
+
+print(dicc)
+dicc.update({'Sofia': 5})
+dicc.pop("Maria")
+print(dicc)
+
