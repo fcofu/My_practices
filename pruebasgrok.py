@@ -2,6 +2,7 @@
 
 animales = ['perro', 'gato', 'raton', 'iguana', 'caballo']
 animales.append('jirafa')
+animales.pop('perro')
 print(animales)
 
 #Dada numeros = [4, 8, 15, 16, 23, 42], encuentra el índice del número 16 y elimínalo usando pop().
@@ -101,4 +102,28 @@ print(dicc)
 dicc.update({'Sofia': 5})
 dicc.pop("Maria")
 print(dicc)
+
+
+'''5. Ejercicio integrador (combina todo)
+python
+# Dada esta lista de diccionarios:
+estudiantes = [
+    {"nombre": "Ana", "calificaciones": [8, 9, 7]},
+    {"nombre": "Luis", "calificaciones": [6, 5, 7]},
+    {"nombre": "Marta", "calificaciones": [10, 9, 10]}
+]
+Recorre la lista con un for.
+Para cada estudiante, calcula el promedio de sus calificaciones (usa sum() y len()).
+Guarda los resultados en un nuevo diccionario {"nombre": promedio}.
+Imprime quién tiene el promedio más alto.'''
+
+
+estudiantes = {
+    ("nombre": "Ana", "calificaciones": [8, 9, 7]),
+    ("nombre": "Luis", "calificaciones": [6, 5, 7]),
+    ("nombre": "Marta", "calificaciones": [10, 9, 10])
+}
+
+for estudiante,calificacion in estudiantes.items():
+    
 
